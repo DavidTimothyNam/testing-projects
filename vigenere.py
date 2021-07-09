@@ -25,4 +25,4 @@ def encode_vigenere(plaintext, key):
             new = alphabet.index(plain) + alphabet.index(cipher)
             final = alphabet[new % 26]
             ciphertext += final    
-    return(ciphertext)
+    return ciphertext
