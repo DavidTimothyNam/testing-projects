@@ -1060,19 +1060,19 @@ def transition_change_key(key, original_ciphertext, five_most_likely_key_lengths
         return key
     elif answer == "2":
         key = input("Enter the key you would like to use: ") 
-        transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
+        key = transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
         return key
     elif answer == "3":
         key = show_key_lengths(five_most_likely_key_lengths, original_ciphertext)
-        transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
+        key = transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
         return key
     elif answer == "4":
         key = bigram_analysis(key, original_ciphertext)
-        transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
+        key = transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
         return key
     else:
         print("Sorry, that wasn't a valid option. Please try again! \n")
-        transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
+        key = transition_change_key(key, original_ciphertext, five_most_likely_key_lengths)
         return key
 
 def end_card():
